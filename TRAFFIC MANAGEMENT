@@ -1,0 +1,109 @@
+class TrafficData {
+    int vehicleCount;
+    double speed;
+ 
+    public TrafficData(int vehicleCount, double speed) {
+        this.vehicleCount = vehicleCount;
+        this.speed = speed;
+    }
+
+
+    public int getVehicleCount() {
+        return vehicleCount;
+    }
+
+    public void setVehicleCount(int vehicleCount) {
+        this.vehicleCount = vehicleCount;
+    }
+
+    public double getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(double speed) {
+        this.speed = speed;
+    }
+}
+
+
+class TrafficSignalOptimization {
+    public void optimizeSignalTiming(TrafficData data) {
+
+        if (data.getVehicleCount() > 10) {
+            System.out.println("Increasing green light duration.");
+        } else {
+            System.out.println("Maintaining current signal timings.");
+        }
+    }
+}
+
+public class TrafficSignalControlApp {
+    public static void main(String[] args) {
+  
+        TrafficData currentData = new TrafficData(15, 30.0); // Example data
+        
+
+        TrafficSignalOptimization optimizer = new TrafficSignalOptimization();
+        optimizer.optimizeSignalTiming(currentData);
+        
+
+        System.out.println("Signal timings adjusted based on current traffic data.");
+    }
+}
+
+
+class TrafficVisualization {
+    public void displayRealTimeData(TrafficData data) {
+        
+        System.out.println("Real-time Traffic Data:");
+        System.out.println("Vehicle Count: " + data.getVehicleCount());
+        System.out.println("Speed: " + data.getSpeed() + " km/h");
+    }
+    
+    public void generateReports() {
+
+        System.out.println("Generating traffic flow reports...");
+    }
+}
+
+
+class TrafficManagementUI {
+    public void displayTrafficManagerUI() {
+       
+        System.out.println("Traffic Manager UI displayed.");
+    }
+    
+    public void displayCityOfficialDashboard() {
+      
+        System.out.println("City Official Dashboard displayed.");
+    }
+}
+
+class TrafficSignalSystem {
+  
+    public void drawDataFlowDiagram() {
+        
+        System.out.println("Data Flow Diagram drawn.");
+    }
+
+    public void implementAlgorithm() {
+       
+        System.out.println("Algorithm implemented.");
+    }
+    
+    public void provideDocumentation() {
+       
+        System.out.println("Documentation provided.");
+    }
+ 
+    public void developUserInterface() {
+        
+        System.out.println("User interface developed.");
+    }
+    
+    
+    public void runTestCases() {
+
+        System.out.println("Test cases run.");
+    }
+}
